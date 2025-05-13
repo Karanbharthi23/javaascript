@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>karan goswami</title>
+</head>
+<body style="background-color: black;color: aquamarine;">
+    <ul>
+    <li>BCA</li>
+    <li>MCA</li>
+    <li>BSC</li>
+    <li>MSC</li></ul>
+</body>
+<script>
+        //    
+        const arr1=["RED","GREEN","BLUE"]
+        const arr2=["red","green","blue"]
+        arr1.forEach((text,index)=> fun1(text,arr1[index]));
+        function fun1(name,bgcolor1)
+        {
+            const btn=document.createElement("button")
+            btn.setAttribute("type","submit");
+            btn.setAttribute("className","main")
+            btn.style.borderRadius="10px"
+            btn.style.backgroundColor=(`${bgcolor1}`)
+            btn.style.cursor="pointer"
+            const textnode=document.createTextNode(`${name}`);
+            btn.appendChild(textnode)
+            document.body.appendChild(btn)
+        }
+
+</script>
+</html>
