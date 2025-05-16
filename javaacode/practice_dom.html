@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>karan goswami</title>
+</head>
+<body style="background-color: black;color: red;">
+    
+</body>
+
+<script>
+    //TEXTNODE INNERHTML 
+    //OUTER TEXXTCONTENT(REPLCE WITH)"li:nth-child(2)" 
+    // //REMOVE
+       function inerhtml()
+       {
+        const ul=document.createElement('ul')
+        ul.className="language"
+        const li=document.createElement('li');
+        li.innerHTML="ONE"
+        ul.appendChild(li);
+        document.body.appendChild(ul)
+       }
+       inerhtml();
+       function textnode(count){
+            const li=document.createElement('li')
+            const texnode1=document.createTextNode(`${count}`)
+            li.appendChild(texnode1);
+            document.querySelector('.language').appendChild(li);
+       }
+       function nodes(count)
+       {
+        const  li=document.createElement('li')
+       // const textnodes=document.createTextNode(`${count}`)
+        li.appendChild(document.createTextNode(`${count}`))
+        document.querySelector('.language').appendChild(li)
+       }
+       function nodetext(four)
+       {
+            const li=document.createElement('li')
+            li.appendChild(document.createTextNode(`${four}`))
+            document.querySelector('.language').appendChild(li)
+       }
+       function textcon(con)
+       {
+            const original=document.querySelector('li:nth-child(2)')
+            console.log(original);
+            const dupli=document.createElement('li')
+            dupli.textContent=(`${con}`)
+            original.replaceWith(dupli)
+            
+       }
+       function textcons1(con)
+       {
+            const original=document.querySelector('li:nth-child(3)')
+            const dupli=document.createElement('li')
+            dupli.textContent=`${con}`
+            original.replaceWith(dupli)
+       }
+       function four(four){
+          const original=document.querySelector('li:nth-child(4)')
+          const dupli=document.createElement('li')
+          dupli.textContent=`${four}`
+          original.replaceWith(dupli)
+       }
+       function outer()
+       {
+               const val=document.querySelector('li:nth-child(1)')
+               val.outerHTML="<li>One</li>"
+               const val2=document.querySelector("li:nth-child(2)")
+               val2.outerHTML="<li>TWO</li>"
+               
+               // document.querySelector('.language').appendChild(val)
+       }
+       nodetext("Four")
+       const count="Two"
+       textnode(count)
+       nodes("Three")
+       textcon("Two")
+       textcons1("Three")
+       four("Four")
+       outer();
+</script>
+</html>
