@@ -4,16 +4,50 @@
     box-sizing: border-box;
     font-family:'Gilroy';
 }
-html,body
+body
 {
-    height:100%;
-    width: 100%;
-    background-color: #921616;
-
+    display: flex;
+    background-color: #206885;
+     align-items: center;
+    justify-content: center;
+    box-shadow: 20px;
 }
 #card
 {
-    height: 400px;
-    width:400px;
-    background-color:#921616 ;
+    height: 320px;
+    width:290px;
+    background-color:aliceblue ;
+    border-radius: 15PX;
+    padding:30px;
+    text-align: center;
+    box-shadow:2px 3px rgb(74, 73, 73);
+}
+#card img
+{
+    height: 55%;
+    width:100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 27px;
+      box-shadow: 2px 1px grey;
+}
+#card h1
+{
+    font: size 20px;
+    margin:0 10px;
+}
+#card h5
+{
+    font-size: 25px;
+    color: red;
+}
+button
+{
+    background-color: rgb(80, 172, 80);
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: 100;
+    color:white;
+    border-color: black;
+    cursor:pointer;
 }
