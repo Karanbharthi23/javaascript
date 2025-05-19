@@ -1,0 +1,27 @@
+.container
+{
+    align-items: center;
+    justify-content: center;
+    border:solid;
+    border-radius:8px;
+    height:150px ;
+    width:260px;
+    background-color: rgb(186, 186, 235);
+    cursor: pointer;
+}
+body
+{
+    background: rgb(86, 59, 86);
+}
+.submit
+{
+    border-radius: 5px;
+    border: solid rgb(46, 44, 44);
+    background: rgb(76, 125, 123);
+}
+.User-Input
+{
+    cursor: text;
+    border-radius: 25px;
+    padding: 5px;
+}
