@@ -9,7 +9,7 @@
     width:20px;
     background: rgb(255, 0, 0);
     border-radius: 50%;
-    
+    mix-blend-mode: difference;
     position: absolute;
     transition: 0.2s;
 }

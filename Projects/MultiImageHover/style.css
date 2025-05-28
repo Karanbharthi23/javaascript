@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Gilroy';
+    background: #000;
+}
+html,body
+{
+    height: 100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color: beige;
+}
+.main
+{
+    height: 100%;
+    width:100%;
+    position:relative;
+    background-color: black;
+}
+.elem{
+    height: 100px;
+    width:100%;
+    border-bottom: 2px solid white;
+    display:flex;
+    align-items: center;
+     justify-content: flex-start;
+}
+.elem h1{
+    font-size:6vw;
+    align-items: center;
+   
+}
+.elem img
+{
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    height: 120px;
+    width:120px;
+    padding:2px;
+    border: 2px solid white;
+    position:absolute;
+    mix-blend-mode: difference;
+    transition: 0.2s;
+    opacity: 0;
+}
