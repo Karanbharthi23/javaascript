@@ -36,4 +36,8 @@ document.querySelector(".story").addEventListener("click",function(event)
 {
             document.querySelector(".full-screen").style.display="block"
             document.querySelector(".full-screen").style.backgroundImage= `url(${arr[event.target.id].story})`
+            setTimeout(function()
+        {
+            document.querySelector(".full-screen").style.display="none"
+        },3000)
 })
