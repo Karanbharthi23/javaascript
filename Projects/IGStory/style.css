@@ -22,11 +22,12 @@ body{
 }
 .storiyan
 {
-    height: 450px;
+    height: 550px;
     width:350px;
     background-color: white;
-    border:1px solid black;
+    border:4px solid black;
     border-radius: 12px;
+    position: relative;
     white-space: nowrap;
 }
 .story 
@@ -38,6 +39,7 @@ body{
     padding:20px;
     overflow-x: scroll;
     overflow-y:hidden;
+ 
 }
 .story::-webkit-scrollbar{
     display:none;
@@ -49,10 +51,21 @@ body{
     border:3px solid red;
     border-radius: 50%;
     display: inline-block;
+       margin:5px;
 }
 .story11 img
 {
     height:100%;
     width:100%;
     border-radius: 50%;
+}
+.full-screen
+{
+        height: 100%;
+        width:100%;
+        position: absolute;
+        display: none;
+        background-size: cover;
+        background-position: center;
+        border-radius: 12px;
 }
