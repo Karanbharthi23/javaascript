@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Karan Goswami</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+    const h1=document.querySelector("h1")
+     let a = document.querySelector("#start").addEventListener("click",function(){
+       let x= setTimeout(function ()
+    {
+            document.querySelector("h1").innerHTML=" Set Time Out Run"
+            console.log("second");
+            
+    },3000)
+    return x;
+     })
+    document.querySelector("#stop").addEventListener("click",function(a){
+        console.log("stop");
+          document.querySelector("h1").innerHTML=" CLEAR RUN"
+        clearTimeout(a)
+     })
+</script>
+</html>
