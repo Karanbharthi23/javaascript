@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Hello EveryOne You Can change color from here</h1>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+</body>
+<script>
+    let id
+       document.querySelector("#start").addEventListener("click",function()
+        {   
+          id=setInterval(function ()
+        {
+                  let randomnum=Math.floor(Math.random()*16777215);
+                  let color= "#"+randomnum.toString(16)
+                document.body.style.backgroundColor=`${color}`
+                console.log(color);
+        },1000)
+        })
+        document.querySelector("#stop").addEventListener("click",function(){
+            console.log("stopped");
+                clearInterval(id)
+        })
+</script>
+
+</html>
