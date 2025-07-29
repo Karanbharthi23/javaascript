@@ -2,3 +2,16 @@ package.json
 /node_modules/
 .env
 package-lock.json
+.DS_Store
+.vscode/
+npm-debug.log
+yarn-error.log
+dist/
+coverage/
+*.log
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+*.env.development
+*.env.test
